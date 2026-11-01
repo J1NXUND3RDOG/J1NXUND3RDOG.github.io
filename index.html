@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The personal portfolio of Adesiji Adeleye, Software Engineering student and NOC Engineering Intern.">
+  <title>Adesiji Adeleye | Developer Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0d12;
+      color: #e8eaf0;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1050px, 90%);
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 0;
+      border-bottom: 1px solid #252a35;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span, .accent {
+      color: #a78bfa;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      color: #a8afbd;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #a78bfa;
+    }
+
+    .hero {
+      padding: 105px 0 90px;
+    }
+
+    .tag {
+      color: #a78bfa;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      color: #a8afbd;
+      max-width: 650px;
+      font-size: 17px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border: 1px solid #a78bfa;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .btn.primary {
+      background: #a78bfa;
+      color: #0b0d12;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 0;
+      border-top: 1px solid #252a35;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .muted {
+      color: #a8afbd;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #121620;
+      border: 1px solid #252a35;
+      border-radius: 10px;
+      padding: 23px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #a8afbd;
+      font-size: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #171b27;
+      border: 1px solid #303647;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #252a35;
+      padding: 30px 0;
+      text-align: center;
+      color: #858d9d;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+      }
+
+      nav ul {
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+      <div class="logo">J1NX<span>.</span></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="tag">Software Engineering Student · NOC Intern</div>
+
+      <h1>Hi, I'm <span class="accent">Adesiji.</span></h1>
+
+      <p>
+        I'm a Software Engineering student at Miva University
+        with an interest in software development, web technologies
+        and IT infrastructure. I enjoy exploring technology,
+        learning new skills and turning ideas into practical solutions.
+      </p>
+
+      <div class="actions">
+        <a href="#projects" class="btn primary">Explore my work</a>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2 class="section-title">About me<span class="accent">.</span></h2>
+      <p class="muted">
+        I'm building my foundation in software engineering while
+        gaining practical experience in a Network Operations Centre.
+        My experience also includes WordPress website customisation
+        and graphic design using Canva. I'm always curious about
+        how technology works and eager to improve my technical abilities.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience<span class="accent">.</span></h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>NOC Intern</h3>
+          <p class="accent">Network Operations</p>
+          <p>
+            Monitor infrastructure using Galooli, observe system alerts,
+            follow escalation procedures and communicate operational updates.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Graphic Design & Web Design Intern</h3>
+          <p class="accent">Digital Design</p>
+          <p>
+            Created digital graphics with Canva and worked on website
+            design, content updates and WordPress management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Selected projects<span class="accent">.</span></h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Tranquil Travels & Tours</h3>
+          <p>
+            Customised and managed an existing WordPress business website,
+            creating pages, organising navigation, managing plugins
+            and improving its presentation.
+          </p>
+          <p class="accent" style="margin-top: 15px;">WordPress</p>
+        </div>
+
+        <div class="card">
+          <h3>More projects coming soon</h3>
+          <p>
+            Currently developing my software engineering skills
+            and working towards building more practical projects.
+          </p>
+          <p class="accent" style="margin-top: 15px;">Learning in progress</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills & tools<span class="accent">.</span></h2>
+
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">WordPress</span>
+        <span class="skill">Canva</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">Infrastructure Monitoring</span>
+        <span class="skill">Incident Escalation</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Let's connect<span class="accent">.</span></h2>
+      <p class="muted">
+        Interested in connecting, collaborating or discussing technology?
+        Feel free to reach out.
+      </p>
+
+      <div class="actions">
+        <a href="mailto:sijinx7@gmail.com" class="btn primary">Email me</a>
+        <a href="https://github.com/J1NXUND3RDOG" class="btn">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Adesiji Adeleye. Built with curiosity and code.
+    </footer>
+
+  </div>
+
+</body>
+</html>
